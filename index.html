@@ -41,6 +41,9 @@
         .logo {
             font-weight: 700;
             font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         nav ul {
@@ -110,13 +113,13 @@
             border-radius: 10px;
             padding: 24px;
             transition: 0.3s;
+            cursor: pointer;
         }
 
         .card:hover {
             transform: translateY(-10px);
             background: rgb(247, 175, 41);
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
         }
 
         #contact form {
@@ -196,9 +199,10 @@
 <body>
 
     <nav>
-        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
-            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="Logo" style="height: 40px;" />
-            <span>StepUpBranding </span>
+        <div class="logo">
+            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="StepUpBranding Spark Logo"
+                style="height: 40px;" />
+            <span>StepUpBranding</span>
             <span style="color: orange;">Spark</span>
         </div>
         <ul>
@@ -211,7 +215,6 @@
         </ul>
     </nav>
 
-
     <section id="home" style="padding-top:130px;text-align:center;">
         <h1>Welcome to Spark — Ideas that Impact</h1>
         <p>We build brands that don’t just exist—they stand out, with powerful design, engaging content, and smart
@@ -221,22 +224,26 @@
 
     <section id="about">
         <h2>About Us</h2>
-        <p>At Spark, we believe in transforming
-            businesses into impactful brands. We are more than just a creative agency — we are your strategic partner in
-            building a strong digital presence, crafting unique brand stories, and delivering powerful design solutions.
-            Our mission is to empower startups, small businesses, and growing companies by providing high-quality
-            branding, marketing, design, and development services tailored to their specific goals.
-
+        <p>
+            At Spark, we believe in transforming businesses into impactful brands. We are more than just a creative
+            agency — we are your strategic partner in building a strong digital presence, crafting unique brand stories,
+            and delivering powerful design solutions. Our mission is to empower startups, small businesses, and growing
+            companies by providing high-quality branding, marketing, design, and development services tailored to their
+            specific goals.
+        </p>
+        <p>
             Our passionate team of designers, developers, strategists, and marketing specialists work together to
             deliver creative excellence and result-driven strategies. Whether it’s designing a logo that resonates with
             your audience, creating a visually stunning website, planning effective marketing campaigns, or providing
             personalized consulting, we are committed to helping you stand out in your industry.
-
+        </p>
+        <p>
             With a blend of creativity, strategy, and technology, Sub Spark ensures every project we handle reflects
             your brand’s true essence. We don’t just offer services — we offer long-term partnerships built on trust,
             transparency, and a shared vision of success. Every business has a story, and we make it our mission to tell
             yours in the most captivating and memorable way.
-
+        </p>
+        <p>
             When you choose StepUpBranding Spark, you’re not just hiring a service provider — you’re collaborating with
             a creative force dedicated to turning your ideas into reality and your business into a brand people admire.
         </p>
@@ -265,7 +272,7 @@
                 <h3>Web Development</h3>
                 <p>Customized websites and e‑commerce builds.</p>
             </a>
-            <a href="graphics-design.html" class="card">
+            <a href="graphic-design.html" class="card">
                 <h3>Graphics Design</h3>
                 <p>Illustration, graphics, packaging design.</p>
             </a>
@@ -278,7 +285,6 @@
                 <p>Brand and business consulting services.</p>
             </a>
         </div>
-
     </section>
 
     <section id="showcase">
@@ -293,17 +299,13 @@
             resonate. Explore the categories below and witness how we transform ideas into impactful visual solutions
             tailored for the future.
         </p>
-        <br>
-        <br>
-        <br>
+        <br /><br /><br />
         <a href="showcase.html" class="view-all-showcase-link" style="color: orange;">View Showcase →</a>
-
-
     </section>
 
     <section id="contact">
         <h2 style="text-align:center">Contact Us</h2>
-        <form id="contact-form">
+        <form id="contact-form" method="POST" action="contact.php">
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
             <input type="text" name="subject" placeholder="Subject" required />
