@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sub Spark — Creative Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li a {
+            font-weight: 500;
+            padding: 8px;
+            transition: color .2s;
+        }
+
+        nav li a:hover {
+            color: #e5ff00;
+        }
+
+        section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #222;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #222;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background: orange;
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background .2s;
+        }
+
+        .btn:hover {
+            background: rgb(17, 129, 27);
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .card {
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 24px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgb(247, 175, 41);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #3f5efb;
+        }
+
+        button[type="submit"] {
+            background: orange;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background .2s;
+        }
+
+        button[type="submit"]:hover {
+            background: rgb(17, 129, 27);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 16px 0;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease;
+            margin-top: 8px;
+            color: #555;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="Logo" style="height: 40px;" />
+            <span>StepUpBranding </span>
+            <span style="color: orange;">Spark</span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#showcase">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home" style="padding-top:130px;text-align:center;">
+        <h1>Welcome to Spark — Ideas that Impact</h1>
+        <p>We build brands that don’t just exist—they stand out, with powerful design, engaging content, and smart
+            marketing.</p>
+        <a href="#contact" class="btn" style="margin-top:24px;">Get Started</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Spark, we believe in transforming
+            businesses into impactful brands. We are more than just a creative agency — we are your strategic partner in
+            building a strong digital presence, crafting unique brand stories, and delivering powerful design solutions.
+            Our mission is to empower startups, small businesses, and growing companies by providing high-quality
+            branding, marketing, design, and development services tailored to their specific goals.
+
+            Our passionate team of designers, developers, strategists, and marketing specialists work together to
+            deliver creative excellence and result-driven strategies. Whether it’s designing a logo that resonates with
+            your audience, creating a visually stunning website, planning effective marketing campaigns, or providing
+            personalized consulting, we are committed to helping you stand out in your industry.
+
+            With a blend of creativity, strategy, and technology, Sub Spark ensures every project we handle reflects
+            your brand’s true essence. We don’t just offer services — we offer long-term partnerships built on trust,
+            transparency, and a shared vision of success. Every business has a story, and we make it our mission to tell
+            yours in the most captivating and memorable way.
+
+            When you choose StepUpBranding Spark, you’re not just hiring a service provider — you’re collaborating with
+            a creative force dedicated to turning your ideas into reality and your business into a brand people admire.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <a href="brand-identity.html" class="card">
+                <h3>Brand Identity</h3>
+                <p>Logos, brand guidelines, full identity packs.</p>
+            </a>
+            <a href="ui-ux.html" class="card">
+                <h3>UI/UX Design</h3>
+                <p>Modern interfaces for web & mobile apps.</p>
+            </a>
+            <a href="marketing-strategy.html" class="card">
+                <h3>Marketing Strategy</h3>
+                <p>Social media, ad campaigns, growth plans.</p>
+            </a>
+            <a href="content-creation.html" class="card">
+                <h3>Content Creation</h3>
+                <p>Photography, video, copywriting.</p>
+            </a>
+            <a href="web-development.html" class="card">
+                <h3>Web Development</h3>
+                <p>Customized websites and e‑commerce builds.</p>
+            </a>
+            <a href="graphics-design.html" class="card">
+                <h3>Graphics Design</h3>
+                <p>Illustration, graphics, packaging design.</p>
+            </a>
+            <a href="digital-marketing.html" class="card">
+                <h3>Digital Marketing</h3>
+                <p>SEO, ads, growth hacking strategies</p>
+            </a>
+            <a href="consulting.html" class="card">
+                <h3>Consulting</h3>
+                <p>Brand and business consulting services.</p>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="showcase">
+        <h2>Our Work</h2>
+        <p class="showcase-intro">
+            At StepUpBranding Spark, we don’t just design — we elevate. Our portfolio is a vibrant spectrum of bold
+            identities, user-centric interfaces, and immersive brand experiences crafted for industries that span across
+            food, fashion, tech, sports, health, education, and more. Each project in this showcase is a testament to
+            our belief that design should do more than look good — it should spark action, inspire loyalty, and tell a
+            powerful story. Whether it's a sleek landing page for an AI startup, earthy packaging for an organic brand,
+            or a high-energy sports identity, our work blends strategy with style, delivering visual narratives that
+            resonate. Explore the categories below and witness how we transform ideas into impactful visual solutions
+            tailored for the future.
+        </p>
+        <br>
+        <br>
+        <br>
+        <a href="showcase.html" class="view-all-showcase-link" style="color: orange;">View Showcase →</a>
+
+
+    </section>
+
+    <section id="contact">
+        <h2 style="text-align:center">Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">What services do you offer?</div>
+            <div class="faq-answer">
+                <p>We offer Brand Identity, UI/UX Design, Web Dev, Digital Marketing, Content, and Consulting.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Do you work with startups?</div>
+            <div class="faq-answer">
+                <p>Absolutely—we love helping startups bring their brand vision to life.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I get started?</div>
+            <div class="faq-answer">
+                <p>Just send us a message via the Contact form and we'll guide you through the rest.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What is your turnaround time?</div>
+            <div class="faq-answer">
+                <p>It varies by project—we aim for quality, clear communication, and timely delivery.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy; 2025 Sub Spark. All Rights Reserved.</footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', e => {
+            e.preventDefault();
+            if (confirm('Send this message?')) {
+                alert('Message sent. Thank you!');
+                e.target.reset();
+            }
+        });
+
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

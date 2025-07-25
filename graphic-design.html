@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic Design | Sub Spark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fefefe;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li a {
+            font-weight: 500;
+            padding: 8px;
+            transition: color .2s;
+        }
+
+        nav li a:hover {
+            color: #e5ff00;
+        }
+
+        section {
+            padding: 100px 20px 60px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            background: black;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        .info-box {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .info-box p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background: #f7f7f7;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            color: #ff0080;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        footer {
+            background: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 14px;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="Logo" style="height: 40px;" />
+            <span>StepUpBranding </span>
+            <span style="color: orange;">Spark</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 class="heading">Graphic Design</h1>
+        <div class="info-box">
+            <p>At Sub Spark, we turn creative ideas into impactful visual stories that capture attention and strengthen
+                your brand identity.</p>
+            <p>Our graphic design services bring together style, functionality, and clarity to create stunning visuals
+                for both digital and print platforms.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Social Media Graphics</h3>
+                <p>Attractive and engaging posts, banners, and promotional graphics for all platforms.</p>
+            </div>
+            <div class="feature">
+                <h3>Brochures & Flyers</h3>
+                <p>Professional brochures, flyers, and marketing materials tailored for your campaigns.</p>
+            </div>
+            <div class="feature">
+                <h3>Posters & Banners</h3>
+                <p>Creative large-scale graphics for events, promotions, and business visibility.</p>
+            </div>
+            <div class="feature">
+                <h3>Business Cards</h3>
+                <p>Modern and professional business cards designed to leave a lasting impression.</p>
+            </div>
+            <div class="feature">
+                <h3>Infographics</h3>
+                <p>Visually compelling infographics to simplify complex data and boost engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Sub Spark. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Identity | Sub Spark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffffff, #f3f4f6);
+            color: #111827;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li a {
+            font-weight: 500;
+            padding: 8px;
+            transition: color .2s;
+        }
+
+        nav li a:hover {
+            color: #e5ff00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #111827;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ec4899;
+        }
+
+        section {
+            padding: 140px 20px 60px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .gradient-text {
+            font-size: 58px;
+            font-weight: 700;
+            text-align: center;
+            background: black;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        .info-box {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .info-box p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            color: #8b5cf6;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: #f7f7f7;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="Logo" style="height: 40px;" />
+            <span>StepUpBranding </span>
+            <span style="color: orange;">Spark</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 class="gradient-text">Brand Identity</h1>
+
+        <div class="info-box">
+            <p>Brand identity is more than just a logo — it's your business’s DNA in visual form. At Sub Spark, we help
+                transform your essence into stunning, strategic, and scalable visuals that form deep emotional
+                connections with your audience. Whether you're launching a new brand or refreshing an old one, our
+                mission is to empower your presence with identity systems that are authentic, elegant, and consistent
+                across every touchpoint.</p>
+            <p>From the logo to the last pixel, every component we deliver is crafted with your story in mind. Our
+                process ensures your brand speaks in a voice that is clear, confident, and creatively aligned to your
+                goals.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Logo Design</h3>
+                <p>Custom, timeless logos that visually represent your brand’s core mission and values.</p>
+            </div>
+            <div class="feature">
+                <h3>Color & Typography</h3>
+                <p>Tailored palettes and fonts to reflect your tone, evoke emotion, and ensure legibility.</p>
+            </div>
+            <div class="feature">
+                <h3>Brand Guidelines</h3>
+                <p>Complete manuals for maintaining visual consistency in every design and media application.</p>
+            </div>
+            <div class="feature">
+                <h3>Social Media Identity</h3>
+                <p>Predefined styles and templates for cohesive content across all social platforms.</p>
+            </div>
+            <div class="feature">
+                <h3>Stationery & Collateral</h3>
+                <p>Professional print-ready assets like business cards, letterheads, and branded merchandise.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Sub Spark. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

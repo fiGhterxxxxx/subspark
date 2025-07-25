@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulting | Sub Spark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f7f9fc;
+            color: #222;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li a {
+            font-weight: 500;
+            padding: 8px;
+            transition: color .2s;
+        }
+
+        nav li a:hover {
+            color: #e5ff00;
+        }
+
+        header {
+            padding: 100px 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 52px;
+            font-weight: 700;
+            background: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .info-box {
+            max-width: 900px;
+            background: #ffffff;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .features {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-6px);
+        }
+
+        .feature h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .feature p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+            font-size: 14px;
+            color: #888;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="Logo" style="height: 40px;" />
+            <span>StepUpBranding </span>
+            <span style="color: orange;">Spark</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Consulting Services</h1>
+    </header>
+
+    <div class="info-box">
+        <p>At Sub Spark, we provide expert consulting solutions tailored to elevate your brand and business operations.
+        </p>
+        <p>Our team of professionals delivers strategic advice, creative insights, and scalable frameworks to help you
+            navigate complex branding and marketing challenges with clarity.</p>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h3>Brand Consulting</h3>
+            <p>Elevate your brand identity and positioning with strategic refinement.</p>
+        </div>
+        <div class="feature">
+            <h3>Marketing Consulting</h3>
+            <p>In-depth audits and tailored campaigns to drive market impact.</p>
+        </div>
+        <div class="feature">
+            <h3>Business Growth Strategy</h3>
+            <p>Uncover new opportunities and unlock revenue potential through innovative thinking.</p>
+        </div>
+        <div class="feature">
+            <h3>Digital Transformation</h3>
+            <p>Embrace digitization, process automation, and digital optimization.</p>
+        </div>
+        <div class="feature">
+            <h3>Performance Analysis</h3>
+            <p>Measure success and improve outcomes using data-driven insights.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Sub Spark. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Creation | Sub Spark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #111;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li a {
+            font-weight: 500;
+            padding: 8px;
+            transition: color .2s;
+        }
+
+        nav li a:hover {
+            color: #e5ff00;
+        }
+
+        section {
+            padding: 140px 40px 80px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gradient-text {
+            font-size: 56px;
+            font-weight: 700;
+            background: black;
+            background-size: 200% 200%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientText 8s ease infinite;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @keyframes gradientText {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .info-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+
+        .info-box p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature h3 {
+            color: #fc466b;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #f1f1f1;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="Logo" style="height: 40px;" />
+            <span>StepUpBranding </span>
+            <span style="color: orange;">Spark</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 class="gradient-text">Content Creation</h1>
+
+        <div class="info-box">
+            <p>At Sub Spark, content creation goes beyond visuals — it’s about building stories that resonate with your
+                audience and strengthen your brand’s voice.</p>
+            <p>We craft high-quality content across formats, helping you engage your audience effectively through
+                photos, videos, copywriting, and more. Whether you need striking visuals, clever captions, or
+                storytelling that sells, we’re here to spark that magic across all platforms.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Photography</h3>
+                <p>Professional product, lifestyle, and brand photography to enhance your visual identity and capture
+                    your brand's essence.</p>
+            </div>
+            <div class="feature">
+                <h3>Video Content</h3>
+                <p>Short-form reels, promotional clips, and narrative-driven videos that build emotional connection with
+                    your audience.</p>
+            </div>
+            <div class="feature">
+                <h3>Copywriting</h3>
+                <p>Persuasive, value-driven writing for websites, ad campaigns, emailers, and social posts with a human
+                    touch.</p>
+            </div>
+            <div class="feature">
+                <h3>Social Media Posts</h3>
+                <p>Eye-catching branded posts that keep your feed active, aligned with trends, and engaging to your
+                    followers.</p>
+            </div>
+            <div class="feature">
+                <h3>Blog Articles</h3>
+                <p>Well-researched, SEO-optimized blogs that inform, educate, and establish you as a thought leader in
+                    your space.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Sub Spark. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
