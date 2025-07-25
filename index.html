@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sub Spark — Creative Agency</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
     <style>
@@ -54,11 +54,57 @@
         nav li a {
             font-weight: 500;
             padding: 8px;
-            transition: color .2s;
+            transition: color 0.2s;
         }
 
         nav li a:hover {
             color: #e5ff00;
+        }
+
+        /* Hamburger menu button */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            width: 24px;
+            height: 18px;
+            justify-content: center;
+        }
+
+        .hamburger span {
+            display: block;
+            height: 3px;
+            background: #333;
+            border-radius: 2px;
+        }
+
+        /* Mobile nav */
+        @media (max-width: 768px) {
+            nav ul {
+                position: fixed;
+                top: 60px;
+                right: 0;
+                background: #fff;
+                flex-direction: column;
+                width: 200px;
+                padding: 20px;
+                gap: 15px;
+                border-left: 1px solid #eee;
+                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+                transform: translateX(100%);
+                transition: transform 0.3s ease-in-out;
+                height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+
+            nav ul.active {
+                transform: translateX(0);
+            }
+
+            .hamburger {
+                display: flex;
+            }
         }
 
         section {
@@ -93,7 +139,7 @@
             padding: 14px 28px;
             border-radius: 6px;
             font-weight: 600;
-            transition: background .2s;
+            transition: background 0.2s;
         }
 
         .btn:hover {
@@ -153,7 +199,7 @@
             border: none;
             border-radius: 6px;
             cursor: pointer;
-            transition: background .2s;
+            transition: background 0.2s;
         }
 
         button[type="submit"]:hover {
@@ -177,7 +223,7 @@
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: max-height .3s ease;
+            transition: max-height 0.3s ease;
             margin-top: 8px;
             color: #555;
         }
@@ -200,52 +246,46 @@
 
     <nav>
         <div class="logo">
-            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="StepUpBranding Spark Logo"
-                style="height: 40px;" />
+            <img src="WhatsApp_Image_2025-07-14_at_15.10.31-removebg-preview.png" alt="StepUpBranding Spark Logo" style="height: 40px;" />
             <span>StepUpBranding</span>
             <span style="color: orange;">Spark</span>
         </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#showcase">Our Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
+
+        <div class="hamburger" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="#home" tabindex="0">Home</a></li>
+            <li><a href="#about" tabindex="0">About</a></li>
+            <li><a href="#services" tabindex="0">Services</a></li>
+            <li><a href="#showcase" tabindex="0">Our Work</a></li>
+            <li><a href="#contact" tabindex="0">Contact</a></li>
+            <li><a href="#faq" tabindex="0">FAQ</a></li>
         </ul>
     </nav>
 
     <section id="home" style="padding-top:130px;text-align:center;">
         <h1>Welcome to Spark — Ideas that Impact</h1>
-        <p>We build brands that don’t just exist—they stand out, with powerful design, engaging content, and smart
-            marketing.</p>
+        <p>We build brands that don’t just exist—they stand out, with powerful design, engaging content, and smart marketing.</p>
         <a href="#contact" class="btn" style="margin-top:24px;">Get Started</a>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
         <p>
-            At Spark, we believe in transforming businesses into impactful brands. We are more than just a creative
-            agency — we are your strategic partner in building a strong digital presence, crafting unique brand stories,
-            and delivering powerful design solutions. Our mission is to empower startups, small businesses, and growing
-            companies by providing high-quality branding, marketing, design, and development services tailored to their
-            specific goals.
+            At Spark, we believe in transforming businesses into impactful brands. We are more than just a creative agency — we are your strategic partner in building a strong digital presence, crafting unique brand stories, and delivering powerful design solutions. Our mission is to empower startups, small businesses, and growing companies by providing high-quality branding, marketing, design, and development services tailored to their specific goals.
         </p>
         <p>
-            Our passionate team of designers, developers, strategists, and marketing specialists work together to
-            deliver creative excellence and result-driven strategies. Whether it’s designing a logo that resonates with
-            your audience, creating a visually stunning website, planning effective marketing campaigns, or providing
-            personalized consulting, we are committed to helping you stand out in your industry.
+            Our passionate team of designers, developers, strategists, and marketing specialists work together to deliver creative excellence and result-driven strategies. Whether it’s designing a logo that resonates with your audience, creating a visually stunning website, planning effective marketing campaigns, or providing personalized consulting, we are committed to helping you stand out in your industry.
         </p>
         <p>
-            With a blend of creativity, strategy, and technology, Sub Spark ensures every project we handle reflects
-            your brand’s true essence. We don’t just offer services — we offer long-term partnerships built on trust,
-            transparency, and a shared vision of success. Every business has a story, and we make it our mission to tell
-            yours in the most captivating and memorable way.
+            With a blend of creativity, strategy, and technology, Sub Spark ensures every project we handle reflects your brand’s true essence. We don’t just offer services — we offer long-term partnerships built on trust, transparency, and a shared vision of success. Every business has a story, and we make it our mission to tell yours in the most captivating and memorable way.
         </p>
         <p>
-            When you choose StepUpBranding Spark, you’re not just hiring a service provider — you’re collaborating with
-            a creative force dedicated to turning your ideas into reality and your business into a brand people admire.
+            When you choose StepUpBranding Spark, you’re not just hiring a service provider — you’re collaborating with a creative force dedicated to turning your ideas into reality and your business into a brand people admire.
         </p>
     </section>
 
@@ -290,14 +330,7 @@
     <section id="showcase">
         <h2>Our Work</h2>
         <p class="showcase-intro">
-            At StepUpBranding Spark, we don’t just design — we elevate. Our portfolio is a vibrant spectrum of bold
-            identities, user-centric interfaces, and immersive brand experiences crafted for industries that span across
-            food, fashion, tech, sports, health, education, and more. Each project in this showcase is a testament to
-            our belief that design should do more than look good — it should spark action, inspire loyalty, and tell a
-            powerful story. Whether it's a sleek landing page for an AI startup, earthy packaging for an organic brand,
-            or a high-energy sports identity, our work blends strategy with style, delivering visual narratives that
-            resonate. Explore the categories below and witness how we transform ideas into impactful visual solutions
-            tailored for the future.
+            At StepUpBranding Spark, we don’t just design — we elevate. Our portfolio is a vibrant spectrum of bold identities, user-centric interfaces, and immersive brand experiences crafted for industries that span across food, fashion, tech, sports, health, education, and more. Each project in this showcase is a testament to our belief that design should do more than look good — it should spark action, inspire loyalty, and tell a powerful story. Whether it's a sleek landing page for an AI startup, earthy packaging for an organic brand, or a high-energy sports identity, our work blends strategy with style, delivering visual narratives that resonate. Explore the categories below and witness how we transform ideas into impactful visual solutions tailored for the future.
         </p>
         <br /><br /><br />
         <a href="showcase.html" class="view-all-showcase-link" style="color: orange;">View Showcase →</a>
@@ -345,6 +378,27 @@
     <footer>&copy; 2025 Sub Spark. All Rights Reserved.</footer>
 
     <script>
+        // Toggle mobile menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !expanded);
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', false);
+                }
+            });
+        });
+
+        // Contact form confirmation
         document.getElementById('contact-form').addEventListener('submit', e => {
             e.preventDefault();
             if (confirm('Send this message?')) {
@@ -353,6 +407,7 @@
             }
         });
 
+        // FAQ accordion toggle
         document.querySelectorAll('.faq-question').forEach(btn => {
             btn.addEventListener('click', () => {
                 const item = btn.parentElement;
