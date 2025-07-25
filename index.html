@@ -46,6 +46,22 @@
             gap: 10px;
         }
 
+        /* Hide logo on mobile (less than 768px) */
+        @media (max-width: 767px) {
+            .logo {
+                display: none;
+            }
+        }
+
+        /* Show logo on tablets and larger */
+        @media (min-width: 768px) {
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
         nav ul {
             display: flex;
             gap: 20px;
@@ -419,3 +435,4 @@
 </body>
 
 </html>
+
