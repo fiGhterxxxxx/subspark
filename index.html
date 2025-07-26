@@ -61,15 +61,6 @@
             transition: color 0.2s;
         }
 
-        .toggle-btn {
-            background: var(--accent);
-            border: none;
-            padding: 0.5rem 1rem;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
         nav li a:hover {
             color: #e5ff00;
         }
@@ -343,7 +334,6 @@
             <li><a href="#showcase" tabindex="0">Our Work</a></li>
             <li><a href="#contact" tabindex="0">Contact</a></li>
             <li><a href="#faq" tabindex="0">FAQ</a></li>
-            <button class="toggle-btn" onclick="toggleTheme()">Change Theme</button>
         </ul>
     </nav>
 
@@ -513,9 +503,6 @@
                 item.classList.toggle('open');
             });
         });
-        function toggleTheme() {
-            document.body.classList.toggle("light");
-        }
         
     </script>
 
